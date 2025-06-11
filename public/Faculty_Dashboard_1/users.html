@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside style="">
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/image.png">
+                    <h2><span class="danger"></span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" >
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                
+                <a href="users.html" class="active">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="sections.html" >
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Sections</h3>
+                </a>
+                <a href="courses.html">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Courses</h3>
+                </a>
+                <a href="resource_portal.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Resource Portal</h3>
+                </a>
+                <a href="discussions.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Discussions</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Manage Users</h1>
+            <!-- Analyses -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Users</h3>
+                            <h1>1,024</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <span class="material-icons-sharp">
+                                    person_outline
+                                </span>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Faculty</h3>
+                            <h1>24,981</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>48%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Students</h3>
+                            <h1>14,147</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- search users Section -->
+            <div class="new-users">
+                <h2>Search Users</h2>
+                <br>
+                <div class="input-box">
+                    <i class="uil uil-search"></i>
+                    <input type="text" placeholder="Search here..." />
+                    <button class="button">Search</button>
+                </div>
+                
+                
+                
+            </div>
+            <!-- End of New Users Section -->
+
+           
+            <div class="recent-orders">
+                <h2>Users</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Role</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id="myModal-details" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                        <div class="user-add">
+                            <div style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">User Details</div>                    
+                            <div style="display: flex; align-items: center;"> 
+                                <div style="font-size: large; font-weight: bold;">username:</div>
+                                <div class="input-box">
+                                    
+                                    <input type="text" placeholder="username" />
+                                        
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; margin: 20px; margin-left: 0px; margin-right: 0px;"> 
+                                <div style="font-size: large; font-weight: bold;  ">email:</div>
+                                <div class="input-box">
+                                    
+                                    <input type="text" placeholder="email" />
+                                        
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; margin: 20px; margin-left: 0px; margin-right: 0px;"> 
+                                <div style="font-size: large; font-weight: bold;  ">userID:</div>
+                                <div class="input-box">
+                                    
+                                    <input type="text" placeholder="user ID:" />
+                                        
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; justify-content:space-between; margin:40px; margin-left: 0px;">                                     <div style="font-size: large; font-weight: bold;">role:</div>
+                                <div style="display: flex; align-items: center;">
+                                    <input name="add-user-role" value="student" id="student" type="radio"/>
+                                    <label for="student">Student</label>
+                                        
+                                </div>
+                                    
+                                <div style="display: flex; align-items: center;">
+                                        
+                                    <input name="add-user-role" value="faculty" id="faculty" type="radio"/>
+                                    <label for="faculty">faculty</label>
+                                        
+                                </div>
+                                    
+                                <div style="display: flex; align-items: center; padding-right: 220px;">
+                                        
+                                    <input name="add-user-role" value="admin" id="admin" type="radio"/>
+                                    <label for="admin">admin</label>
+                                        
+                                </div>
+                            </div>
+                                <div style="display: flex; align-items: center;"> 
+                                <div style="font-size: large; font-weight: bold;">Password:</div>
+                                <div class="input-box">
+                                        
+                                    <input type="text" placeholder="Password" />
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p id="role-descriptor-edit" style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">Section</p>
+                        </div>
+                        <button class="modal-button-delete">Delete user</button>
+                        <button class="modal-button-update">Update user</button>
+                    </div>
+                </div>
+                <a href="#">Show All</a>
+            </div>
+            
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Aditanshu</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+            <br>
+            <br>
+            <br>
+            <div class="user-profile">
+                <div class="logo">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="user" id="user-modal">
+                        <img src="images/plus.png">
+                        <h2>Add</h2>
+                        <p>New User</p>
+                    </div>
+                    
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <div class="user-add">
+                                <div style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">Add Users</div>
+                            
+                                <div style="display: flex; align-items: center;"> 
+                                    <div style="font-size: large; font-weight: bold;">username:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" id="username"  placeholder="username" />
+                                        
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: center; margin: 20px; margin-left: 0px; margin-right: 0px;"> 
+                                    <div style="font-size: large; font-weight: bold;  ">userID:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" id="id" placeholder="user ID" />
+                                            
+                                    </div>
+                                </div>
+                                <div style="display: flex; align-items: center; margin: 20px; margin-left: 0px; margin-right: 0px;"> 
+                                    <div style="font-size: large; font-weight: bold;  ">email:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" id="email" placeholder="email" />
+                                            
+                                    </div>
+                                </div>
+                               
+                                <div style="display: flex; align-items: center; justify-content:space-between; margin:40px; margin-left: 0px;"> 
+                                    <div style="font-size: large; font-weight: bold;">select Role:</div>
+                                    <div style="display: flex; align-items: center;">
+                                        <input name="add-user-role" value="student" id="student" type="radio"/>
+                                        <label for="student">Student</label>
+                                            
+                                    </div>
+                                        
+                                    <div style="display: flex; align-items: center;">
+                                            
+                                        <input name="add-user-role" value="faculty" id="faculty" type="radio"/>
+                                        <label for="faculty">faculty</label>
+                                            
+                                    </div>
+                                        
+                                    <div style="display: flex; align-items: center; padding-right: 220px;">
+                                            
+                                        <input name="add-user-role" value="admin" id="admin" type="radio"/>
+                                        <label for="admin">admin</label>
+                                            
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: center;"> 
+                                    <div style="font-size: large; font-weight: bold;">Password:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" id="password" placeholder="Password" />
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <p id="role-descriptor" style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">Assign Section</p>
+                                
+                                <div id="select-courses">
+                                    <!-- This will be populated dynamically with courses -->
+                                </div>
+                            </div>
+                            <button class="modal-button">Add user</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

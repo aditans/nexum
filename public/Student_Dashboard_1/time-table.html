@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    
+    <title>User Dashboard</title>
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside style="">
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/image.png">
+                    <h2><span class="danger"></span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" >
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                
+                <a href="time-table.html" class="active">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>time-table</h3>
+                </a>
+                
+                <a href="resource_portal.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Resource Portal</h3>
+                </a>
+                <a href="discussions.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Discussions</h3>
+                </a>
+                
+                <a href="#" id="logout-btn">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>TIME TABLE</h1>
+            <!-- Analyses -->
+            <div class="analyse">
+                
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- search users Section -->
+            
+                
+                <table style="height: 80vh; width: 80vw;">
+                    <tr>
+                        <th>Day/Period</th>
+                        <th>I<br>9:30-10:20</th>
+                        <th>II<br>10:20-11:10</th>
+                        <th>III<br>11:10-12:00</th>
+                        <th>12:00-12:40</th>
+                        <th>IV<br>12:40-1:30</th>
+                        <th>V<br>1:30-2:20</th>
+                        <th>VI<br>2:20-3:10</th>
+                        <th>VII<br>3:10-4:00</th>
+                    </tr>
+                    <tr>
+                        <td class="highlight"><b>Monday</b></td>
+                        <td id="monday-9:30">-</td>
+                        <td id="monday-10:20">-</td>
+                        <td id="monday-11:10">-</td>
+                        <td rowspan="6" class="special"><b>LUNCH</b></td>
+                        <td id="monday-12:40">-</td>
+                        <td id="monday-13:30">-</td>
+                        <td id="monday-14:20">-</td>
+                        <td id="monday-15:10">-</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"><b>Tuesday</b></td>
+                        <td id="tuesday-9:30">-</td>
+                        <td id="tuesday-10:20">-</td>
+                        <td id="tuesday-11:10">-</td>
+                        
+                        <td id="tuesday-12:40">-</td>
+                        <td id="tuesday-13:30">-</td>
+                        <td id="tuesday-14:20">-</td>
+                        <td id="tuesday-15:10">-</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"><b>Wednesday</b></td>
+                        <td id="wednesday-9:30">-</td>
+                        <td id="wednesday-10:20">-</td>
+                        <td id="wednesday-11:10">-</td>
+                        
+                        <td id="wednesday-12:40">-</td>
+                        <td id="wednesday-13:30">-</td>
+                        <td id="wednesday-14:20">-</td>
+                        <td id="wednesday-15:10">-</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"><b>Thursday</b></td>
+                        <td id="thursday-9:30">-</td>
+                        <td id="thursday-10:20">-</td>
+                        <td id="thursday-11:10">-</td>
+                       
+                        <td id="thursday-12:40">-</td>
+                        <td id="thursday-13:30">-</td>
+                        <td id="thursday-14:20">-</td>
+                        <td id="thursday-15:10">-</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"><b>Friday</b></td>
+                        <td id="friday-9:30">-</td>
+                        <td id="friday-10:20">-</td>
+                        <td id="friday-11:10">-</td>
+                       
+                        <td id="friday-12:40">-</td>
+                        <td id="friday-13:30">-</td>
+                        <td id="friday-14:20">-</td>
+                        <td id="friday-15:10">-</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight"><b>Saturday</b></td>
+                        <td id="saturday-9:30">-</td>
+                        <td id="saturday-10:20">-</td>
+                        <td id="saturday-11:10">-</td>
+                       
+                        <td id="saturday-12:40">-</td>
+                        <td id="saturday-13:30">-</td>
+                        <td id="saturday-14:20">-</td>
+                        <td id="saturday-15:10">-</td>
+                    </tr>
+                </table>
+           
+            
+           
+            
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Aditanshu</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+            <br>
+            <br>
+            <br>
+            
+
+            
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="time-table.js"></script>
+    <script src="logout.js"></script>
+</body>
+
+</html>

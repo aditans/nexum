@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=forum" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_return" />
+    <title>Responsive Dashboard </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/image.png">
+                    <h2><span class="danger"></span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" >
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                
+                <a href="time-table.html" >
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>time-table</h3>
+                </a>
+                
+                <a href="resource_portal.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Resource Portal</h3>
+                </a>
+                <a href="discussions.html" class="active">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Discussions</h3>
+                </a>
+                
+                <a href="#" id="logout-btn">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Discussions</h1>
+            <div class="chat-container">
+                
+          
+                <div class="chat-messages">
+                    <div class="thread">
+                        <div class="message blue-bg" style="position: relative;">
+                            <div class="message-sender">John <span style="color: red;font-style: italic;">(admin)</span></div>
+                            <div class="message-text">Hey can someone solve my doubt</div>
+                            <div class="message-timestamp">10:30 AM</div>
+                            <button class="reply-button" style="height: 40px; width: 70px; border-radius: 10px; display: flex; align-items: center; justify-content: center; position: absolute;right:70px;bottom: -10px;">
+                                <div>reply</div>
+                                <span class="material-symbols-outlined">
+                                    keyboard_return
+                                </span>
+
+                            </button>
+                            
+                        </div>
+                        <div class="reply-thread">
+                            <div class="message-reply">
+                                <div class="message-sender">John</div>
+                                <div class="message-text">Hey can someone solve my doubt</div>
+                                <div class="message-timestamp">10:30 AM</div>
+                                <div class="line"></div>
+                                <div class="message-sender">Nong <span style="color: cyan;font-style: italic;">(student)</span></div>
+                                <div class="message-text">Hey can someone solve my doubt</div>
+                                <div class="message-timestamp">10:30 AM</div>
+                                <div class="line"></div>
+                                <div class="message-sender">NOng <span style="color: greenyellow;font-style: italic;">(faculty)</span></div>
+                                <div class="message-text">Hey can someone solve my doubt</div>
+                                <div class="message-timestamp">10:30 AM</div>
+                                <div class="line"></div>
+                            </div>
+                            
+                        </div>
+                        
+
+                    </div>
+                  <div class="thread">
+                        <div class="message blue-bg" style="position: relative;">
+                            <div class="message-sender">Jane(student)</div>
+                            <div class="message-text">Not much, just living the dream. How about you?</div>
+                            <div class="message-timestamp">10:35 AM</div>
+                            <button class="reply-button" style="height: 40px; width: 70px; border-radius: 10px; display: flex; align-items: center; justify-content: center; position: absolute;right:70px;bottom: -10px;">
+                                <div>reply</div>
+                                <span class="material-symbols-outlined">
+                                    keyboard_return
+                                </span>
+
+                            </button>
+                        </div>
+                        <div class="reply-thread">
+                            <div class="message-reply">
+                                <div class="message-sender">John(faculty)</div>
+                                <div class="message-text">Hey can someone solve my doubt</div>
+                                <div class="message-timestamp">10:30 AM</div>
+                                <div class="line"></div>
+                                <div class="message-sender">NOng</div>
+                                <div class="message-text">Hey can someone solve my doubt</div>
+                                <div class="message-timestamp">10:30 AM</div>
+                                <div class="line"></div>
+                                <div class="message-sender">NOng</div>
+                                <div class="message-text">Hey can someone solve my doubt</div>
+                                <div class="message-timestamp">10:30 AM</div>
+                                <div class="line"></div>
+                            </div>
+                            
+                        </div>
+                        
+                  </div>
+                  
+                </div>
+
+                    <form class="chat-input-form">
+                        <div id="replying-to" style="display: none; font-size: 14px; margin-bottom: 10px; color: #555;">
+                            <span style="font-style: italic;">Replying to:</span> <span id="replying-to-name"></span>
+                            <button id="cancel-reply" style="margin-left: 10px;padding: 8px;border-radius: 5px;">❌ Cancel</button>
+                        </div>
+                          
+                        <input type="text" class="chat-input" required placeholder="Type here..." />
+                        <button type="submit" class="button send-button">Send</button>
+                      </form>
+
+                
+                
+              </div>
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <span class="material-symbols-outlined">
+                        forum
+                        </span>
+                    
+                </div>
+            </div>
+
+            
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+   
+    <script src="discussions.js"></script>
+    <script src="logout.js"></script>
+    <script>
+        const sideMenu = document.querySelector('aside');
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+
+        const darkMode = document.querySelector('.dark-mode');
+
+        menuBtn.addEventListener('click', () => {
+            sideMenu.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+            sideMenu.style.display = 'none';
+        });
+
+        darkMode.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode-variables');
+            darkMode.querySelector('span:nth-child(1)').classList.toggle('active');
+            darkMode.querySelector('span:nth-child(2)').classList.toggle('active');
+        })
+
+
+
+    </script>
+</body>
+
+</html>

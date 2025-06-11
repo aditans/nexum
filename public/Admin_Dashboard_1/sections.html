@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside style="">
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/image.png">
+                    <h2><span class="danger"></span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" >
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Profile</h3>
+                </a>
+                
+                <a href="users.html" >
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="sections.html" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Sections</h3>
+                </a>
+                <a href="courses.html" >
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Courses</h3>
+                </a>
+                <a href="resource_portal.html">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Resource Portal</h3>
+                </a>
+                <a href="discussions.html">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Discussions</h3>
+                </a>
+                
+                <a href="#" id="logout-btn">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Manage Sections</h1>
+            <!-- Analyses -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                      <div class="info">
+                        <h3>Total Sections</h3>
+                        <h1 id="total-sections">Loading...</h1>
+                      </div>
+                      <div class="progresss">
+                        <svg><circle cx="38" cy="38" r="36"></circle></svg>
+                        <div class="percentage"><span class="material-icons-sharp">person_outline</span></div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- search users Section -->
+            <div class="new-users">
+                
+                
+                
+                
+            </div>
+            <!-- End of New Users Section -->
+
+            <!-- Recent Orders Table -->
+            <div class="recent-orders">
+                <h2>Sections</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course ID</th>
+                            <th>Section ID</th>
+                            <th>year</th>
+                            <th>location</th>
+                            
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id="myModal-details" class="modal">
+                    <div class="modal-content">
+                        <span class="close-modal">&times;</span>
+                            <div class="user-add">
+                                <div style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">Add Sections</div>
+                            
+                                <div style="display: flex; align-items: center;margin:20px; margin-left: 0px; margin-right: 0;"> 
+                                    <div style="font-size: large; font-weight: bold;">SectionID:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" placeholder="ID" id="section-id-edit"/>
+                                        
+                                    </div>
+                                </div>
+                               
+                                
+                                <div style="display: flex; align-items: center; margin:20px; margin-left: 0px; margin-right: 0;"> 
+                                    <div style="font-size: large; font-weight: bold;">Year:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" placeholder="year" id="section-year-edit"/>
+                                        
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: center; margin:20px; margin-left: 0px; margin-right: 0;"> 
+                                    <div style="font-size: large; font-weight: bold;">Location:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" placeholder="Location" id="section-location-edit"/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="select-course-edit">
+                                <div style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">Select Course for Section</div>
+                                <div id="select-courses-edit">
+                                    <!-- This will be populated dynamically with courses -->
+                                </div>
+                                    
+                            </div>
+                        
+                    </div>
+                </div>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+            <br>
+            <br>
+            <br>
+            <div class="user-profile">
+                <div class="logo">
+                    <!-- Trigger/Open The Modal -->
+                    <div class="user" id="user-modal">
+                        <img src="images/plus.png">
+                        <h2>Add</h2>
+                        <p>New Section</p>
+                    </div>
+                    
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close-modal">&times;</span>
+                            <div class="user-add">
+                                <div style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">Add Sections</div>
+                            
+                                <div style="display: flex; align-items: center;margin:20px; margin-left: 0px; margin-right: 0;"> 
+                                    <div style="font-size: large; font-weight: bold;">SectionID:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" placeholder="ID" id="section-id"/>
+                                        
+                                    </div>
+                                </div>
+                               
+                                
+                                <div style="display: flex; align-items: center; margin:20px; margin-left: 0px; margin-right: 0;"> 
+                                    <div style="font-size: large; font-weight: bold;">Year:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" placeholder="year" id="section-year"/>
+                                        
+                                    </div>
+                                </div>
+
+                                <div style="display: flex; align-items: center; margin:20px; margin-left: 0px; margin-right: 0;"> 
+                                    <div style="font-size: large; font-weight: bold;">Location:</div>
+                                    <div class="input-box">
+                                        
+                                        <input type="text" placeholder="Location" id="section-location"/>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="select-course">
+                                <div style="font-size: 30px; font-weight: bold; margin:40px; margin-left: 0px;">Select Course for Section</div>
+                                <div id="select-courses">
+                                    <!-- This will be populated dynamically with courses -->
+                                </div>
+                                    
+                            </div>
+                            <button class="modal-button">Add Section</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="sections.js"></script>
+    <script src="logout.js"></script>
+    <script src="load.js"></script>
+    <script>
+        async function loadDashboardStats() {
+        try {
+          const res = await fetch('http://localhost:5001/dashboard/stats');
+          const data = await res.json();
+    
+          if (data.success) {
+            
+            const stats = data.data;
+            const totalUsers = stats.total_users;
+            const faculty = stats.total_faculty;
+            const students = stats.total_students;
+            const sections = stats.total_sections;
+            document.getElementById('total-sections').textContent = sections;
+    
+            document.getElementById('total-users').textContent = totalUsers;
+            document.getElementById('total-faculty').textContent = faculty;
+            document.getElementById('total-students').textContent = students;
+    
+            document.getElementById('faculty-percent').textContent =
+              ((faculty / totalUsers) * 100).toFixed(1) + '%';
+            document.getElementById('student-percent').textContent =
+              ((students / totalUsers) * 100).toFixed(1) + '%';
+    
+            document.getElementById('total-resources').textContent = stats.total_resources;
+            document.getElementById('total-courses').textContent = stats.total_courses;
+            document.getElementById('total-enrollments').textContent = stats.total_enrollments;
+            document.getElementById('total-credits').textContent = stats.total_credits;
+            
+          }
+        } catch (error) {
+          console.error('Failed to load dashboard stats:', error);
+        }
+      }
+    
+      window.onload = loadDashboardStats;
+    
+    
+
+
+
+
+  
+    </script>
+    
+    
+</body>
+
+</html>
