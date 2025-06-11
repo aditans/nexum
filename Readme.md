@@ -121,5 +121,3 @@ See [LICENSE](LICENSE) for more information.
 - Inspired by the need for efficient academic resource sharing and collaboration.
 
 ---
-
-> _For full technical and functional specifications, see the [Software Requirements Specification (SRS)](./SRS.md)._
